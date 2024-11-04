@@ -8,8 +8,8 @@ Esse projeto foi elaborado utilizando a linguagem Java e framework bootsrtap.
 
 Inicialmente faça o `git clone` e entre no diretóprio do projeto
 ```
-git clone git@github.com:
-cd 
+git clone git@github.com:DevRamonlemos/ToCLOC-web
+cd ToCLOC-web
 ```
 
 Após, verifique se você tem o bootstrap instalado. Em seguida rode o seguinte comando para instalar as dependências. 
