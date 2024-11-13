@@ -1,0 +1,7 @@
+header img {
+  width: 20%; /* Reduz a largura da imagem para ocupar menos espaço */
+  max-height: 100px; /* Ajusta a altura para equilibrar com o restante dos elementos */
+  object-fit: cover; /* Faz a imagem preencher o espaço designado */
+  display: block;
+  margin: 20px auto;
+}
