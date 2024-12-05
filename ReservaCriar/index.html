@@ -49,6 +49,7 @@
 
         <!-- Retângulo Cinza -->
         <div class="gray-rectangle mt-5 p-4">
+            <h1>Criar horario</h1>
             <!-- Botão Selecionar Data -->
             <div class="mb-3">
                 <input type="date" class="form-control custom-select">
@@ -63,15 +64,32 @@
                 <button class="day-button">SAB</button>
                 <button class="day-button">DOM</button>
             </div>
+            <div class="d-flex flex-wrap">
+                <button class="day-button">14:00</button>
+                <button class="day-button">16:00</button>
+                <button class="day-button">18:00</button>
+                <button class="day-button">20:00</button>
+            </div>
+            <a href="../ReservaCriar/index.html">
+            <button class="add-button mt-4 mx-auto" onclick="alert('Horário novo criado com sucesso')">Criar</button>
+            </a>    
+        </div>
+
+        <div class="gray-rectangle mt-5 p-4">
+            <h1>confirmações pendentes: </h1>
         </div>
 
         <!-- Quadrado com Horário -->
-        <div class="time-box mt-4 mx-auto">
-            <span class="time-text">XX:XX</span>
+        <div class="d-flex flex-wrap">
+            <button class="day-button">pedido 1</button>
+            <button class="day-button">pedido 2</button>
+            <button class="day-button">pedido 3</button>
+            
         </div>
-
         <!-- Botão Adicionar -->
-        <button class="add-button mt-4 mx-auto" onclick="location.href='destino.html'">Adicionar</button>
+         <a href="../ReservaCriar/index.html">
+        <button class="add-button mt-4 mx-auto" onclick="alert('Reserva confirmada com sucesso !')">Confirmar</button>
+         </a>    
     </div>
 
     <!-- Script para Atualizar Imagem -  -->
