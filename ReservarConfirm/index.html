@@ -49,78 +49,16 @@
 
         <!-- Retângulo Cinza -->
         <div class="gray-rectangle mt-5 p-4">
-            <!-- Botão Selecionar Data -->
-            <div class="mb-3">
-                <input type="date" class="form-control custom-select">
-            </div>
-            <!-- Botões dos Dias da Semana -->
-            <div class="d-flex flex-wrap">
-                <button class="day-button">SEG</button>
-                <button class="day-button">TER</button>
-                <button class="day-button">QUA</button>
-                <button class="day-button">QUI</button>
-                <button class="day-button">SEX</button>
-                <button class="day-button">SAB</button>
-                <button class="day-button">DOM</button>
-            </div>
-        </div>
+            <h1 class="card-title">Revisão reserva: </h1>
+            <h2>Data: </h2>
+            <h2>Horário: </h2>
 
-        <!-- Quadrado com Horário -->
-        <div class="d-flex flex-wrap">
-            <button class="time-box">14:00</button>
-            
         </div>
 
         <!-- Botão Adicionar -->
-        <button class="add-button mt-4 mx-auto" onclick="location.href='destino.html'">Adicionar</button>
+        <button class="add-button mt-4 mx-auto" onclick="location.href='Home/index'">confirmar</button>
     </div>
 
-    <!-- Script para Atualizar Imagem -  -->
-    <script>
-        const imageUpload = document.getElementById('imageUpload');
-        const imageBox = document.querySelector('.image-box');
-
-        imageUpload.addEventListener('change', (event) => {
-            const file = event.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = () => {
-                    imageBox.style.backgroundImage = `url(${reader.result})`;
-                };
-                reader.readAsDataURL(file);
-            }
-        });
-        
-        // Script para os botões
-        const dayButtons = document.querySelectorAll('.day-button');
-
-    dayButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            
-            dayButtons.forEach(btn => btn.classList.remove('active'));
-            
-            button.classList.add('active');
-        });
-    });
-    // Campo de editar no topo da pagina
-    const editButton = document.querySelector('.edit-button');
-    const detailsSection = document.querySelector('.details-section');
-
-    editButton.addEventListener('click', () => {
-        // Altere os elementos para inputs editáveis
-        detailsSection.innerHTML = `
-            <input type="text" class="form-control mb-2" value="ECO POINT: Parque Ecológico">
-            <input type="text" class="form-control mb-2" value="Endereço: Rua Amadeu Furtado, 1515">
-            <input type="text" class="form-control mb-2" value="Horário: seg - sexta (08:00/20:00)">
-            <button class="save-button btn btn-success">Salvar</button>
-        `;
-
-        // Adicione lógica ao botão salvar
-        const saveButton = detailsSection.querySelector('.save-button');
-        saveButton.addEventListener('click', () => {
-            alert('Alterações salvas!'); // Substitua com lógica para salvar
-        });
-    });
     </script>
 </body>
 </html>
