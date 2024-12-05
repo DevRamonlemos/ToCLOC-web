@@ -1,13 +1,6 @@
 /* Fonte Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-/* Body */
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #F8F9FA;
-}
 
 /* Navbar TocLoc */
 .custom-navbar {
@@ -100,58 +93,132 @@ body {
 
 /*  -------------- FIM DA NAVBAR --------------*/
 
-
-
-
-/* Texto Principal */
-.main-text {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #3447F0;
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F9FA;
 }
 
-/* Cards */
-.custom-card {
-    width: 700px;
-    height: 250px;
+/* Card Principal */
+.main-card {
     background-color: #D9D9D9;
     border-radius: 20px;
+    width: 1357px;
+    height: 385px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: start;
-    padding-top: 5px;
-    overflow: hidden; 
+    justify-content: space-between;
 }
 
-.card-img {
-    width: 90%; 
-    height: auto; 
-    max-height: 70%;
-    object-fit: cover;
+/* Quadrado de Imagem */
+.image-box {
+    width: 385px;
+    height: 346px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.image-label {
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Detalhes do Card */
+.details-section {
+    flex: 1;
+    padding: 10px;
 }
 
 .card-title {
-    font-size: 1.2rem;
     font-weight: bold;
-    color: #000;
-    margin: 0;
+    font-size: 1.5rem;
 }
 
-/* Botão Suas Reservas */
-.custom-button {
-    width: 300px;
-    height: 50px;
+.card-text {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.edit-button {
+    background-color: #0CB6FF;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Retângulo Cinza */
+.gray-rectangle {
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* Caixa de Horário */
+.time-box {
+    width: 427px;
+    height: 219px;
+    background-color: #FFFFFF;
+    border: 1px solid #C3C3C3;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time-text {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Botões dos dias da semana */
+.day-button {
+    background-color: #FFFFFF;
+    border: 3px solid #000000;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #000000;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.day-button.active {
     background-color: #3447F0;
+    border-color: #2600FF;
     color: #FFFFFF;
+}
+
+
+@media (max-width: 576px) {
+    .day-button {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Botão Adicionar */
+.add-button {
+    width: 705px;
+    height: 88px;
+    background-color: #3447F0;
     border: none;
     border-radius: 20px;
-    font-size: 1rem;
+    color: #FFFFFF;
+    font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.custom-button:hover {
-    background-color: #2836C1;
+    display: block;
+    text-align: center;
 }

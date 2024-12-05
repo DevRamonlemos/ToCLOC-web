@@ -1,122 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TOCLOC</title>
-    <!-- Bootstrap CSS -->
+    <title>Página Inicial</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="logo.png" alt="TOCLOC" width="30" height="30"> TOCLOC
-            </a>
-            <form class="d-flex mx-auto">
-                <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-            </form>
-            <div class="navbar-text">
-                Olá, @username!
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <nav class="navbar custom-navbar d-flex flex-nowrap align-items-center px-3">
+        <!-- Logo com Texto e Ícone -->
+        <div class="d-flex align-items-center me-3">
+            <span class="navbar-brand logo-text">TOCLOC</span>
+            <img src="basqueteicon.png" alt="Ícone Basquete" class="logo-icon ms-1">
+        </div>
+        <!-- Barra de Pesquisa -->
+        <form class="search-bar me-3">
+            <input type="text" class="form-control search-input w-100" placeholder="Pesquisar">
+        </form>
+        <!-- Saudação do Usuário e Ícone de Menu -->
+        <div class="user-section d-flex align-items-center">
+            <span class="greeting-text">Olá, @username!</span>
+            <div class="menu-icon ms-2"></div>
         </div>
     </nav>
 
-    <!-- Sidebar Offcanvas -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="sidebarLabel">Menu</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <ul class="list-unstyled">
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Main Content -->
-    <div class="container mt-4 text-center">
-        <h2>Tocou, locou, jogou!</h2>
-
-        <!-- Carousel -->
-        <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="futebol.png" class="d-block w-100" alt="Futebol">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Futebol</h5>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="basquete.png" class="d-block w-100" alt="Basquete">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Basquete</h5>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="tenis.png" class="d-block w-100" alt="Tênis">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Tênis</h5>
-                    </div>
-                </div>
+    <!-- Conteúdo da Página -->
+    <div class="container text-center mt-4">
+        <!-- Texto Principal -->
+        <h1 class="main-text">Tocou, locou, jogou!</h1>
+        
+        <!-- Cards -->
+        <div class="d-flex flex-column align-items-center mt-4">
+            <div class="card custom-card mb-3">
+                <a href="../tela evento disponibilidade/">
+                <img src="quadra1.png" alt="Eco Point" class="card-img">
+                <h3 class="card-title">Eco Point</h3>
+                </a>
+            
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-        <!-- Events Section -->
-        <h3 class="mt-4">EVENTOS TOCLOC:</h3>
-        <div id="eventsCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="evento1.png" class="d-block w-100" alt="Evento 1">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Campeonato SEST</h5>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="evento2.png" class="d-block w-100" alt="Evento 2">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Vôlei praia campeonato</h5>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="evento3.png" class="d-block w-100" alt="Evento 3">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Basketball cup</h5>
-                    </div>
-                </div>
+            <div class="card custom-card mb-3">
+                <img src="quadra2.png" alt="Quadra 2" class="card-img">
+                <h3 class="card-title">Quadra 2</h3>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#eventsCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#eventsCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="card custom-card mb-3">
+                <img src="quadra3.png" alt="Quadra 3" class="card-img">
+                <h3 class="card-title">Quadra 3</h3>
+            </div>
         </div>
-
-        <!-- Reservation Button -->
-        <button class="btn btn-primary mt-4">Suas Reservas</button>
+        
+        <!-- Botão Suas Reservas -->
+        <button class="custom-button mt-4" onclick="location.href='reservas.html'">Suas Reservas</button>
     </div>
-
-    <!-- Bootstrap JS and Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
