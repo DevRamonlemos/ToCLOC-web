@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "ToCLOC-web",
+			"path": "../.."
+		},
+		{
+			"name": "telapreregistro",
+			"path": "../../../../../Downloads/ToCLOC-web-main (1)/ToCLOC-web-main/telapreregistro"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ToCLOC-web"
+	}
+}
